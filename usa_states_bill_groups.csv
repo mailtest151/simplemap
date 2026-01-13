@@ -1,0 +1,52 @@
+Name,Slug,Short Code,Bill Group
+Alabama,alabama,AL,B
+Alaska,alaska,AK,D
+Arizona,arizona,AZ,D
+Arkansas,arkansas,AR,B
+California,california,CA,D
+Colorado,colorado,CO,D
+Connecticut,connecticut,CT,D
+Delaware,delaware,DE,Incomplete
+Florida,florida,FL,B
+Georgia,georgia,GA,B
+Hawaii,hawaii,HI,Incomplete
+Idaho,idaho,ID,D
+Illinois,illinois,IL,Incomplete
+Indiana,indiana,IN,C
+Iowa,iowa,IA,C
+Kansas,kansas,KS,Incomplete
+Kentucky,kentucky,KY,C
+Louisiana,louisiana,LA,B
+Maine,maine,ME,D
+Maryland,maryland,MD,F
+Massachusetts,massachusetts,MA,Incomplete
+Michigan,michigan,MI,Incomplete
+Minnesota,minnesota,MN,D
+Mississippi,mississippi,MS,F
+Missouri,missouri,MO,B
+Montana,montana,MT,0
+Nebraska,nebraska,NE,B
+Nevada,nevada,NV,C
+New Hampshire,new-hampshire,NH,B
+New Jersey,new-jersey,NJ,Incomplete
+New Mexico,new-mexico,NM,D
+New York,new-york,NY,B
+North Carolina,north-carolina,NC,C
+North Dakota,north-dakota,ND,A
+Ohio,ohio,OH,B
+Oklahoma,oklahoma,OK,B
+Oregon,oregon,OR,B
+Pennsylvania,pennsylvania,PA,Incomplete
+Rhode Island,rhode-island,RI,A
+South Carolina,south-carolina,SC,B
+South Dakota,south-dakota,SD,0
+Tennessee,tennessee,TN,C
+Texas,texas,TX,B
+Utah,utah,UT,D
+Vermont,vermont,VT,B
+Virginia,virginia,VA,B
+Washington,washington,WA,Incomplete
+Washington DC,washington-dc,DC,B
+West Virginia,west-virginia,WV,C
+Wisconsin,wisconsin,WI,C
+Wyoming,wyoming,WY,F
