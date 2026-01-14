@@ -814,6 +814,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var items = document.querySelectorAll('.w-dyn-item a');
   var incompleteStates = [];
+  var groups = {};
 
   items.forEach(function (item) {
     var code = item.getAttribute('data-code');
@@ -831,6 +832,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (group === "Incomplete") {
         incompleteStates.push(code);
+      }
+
+      if (!groups[group]) {
+        groups[group] = [];
+      }
+      groups[group].push({ name: name, code: code });
+    }
+  });
+
+  // Update Group Lists and Counts
+  Object.keys(groupColors).forEach(function (key) {
+    var groupStates = groups[key] || [];
+    var count = groupStates.length;
+    var groupClass = key.toLowerCase();
+
+    // Sort states alphabetically by name
+    groupStates.sort(function (a, b) {
+      return a.name.localeCompare(b.name);
+    });
+
+    var container = document.querySelector('.group-main-block.group-' + groupClass);
+    if (container) {
+      // Update Count
+      var countText = container.querySelector('.group-point-block .group-subheader-text');
+      if (countText) {
+        var hasDC = groupStates.some(function (s) { return s.code === 'DC'; });
+        if (hasDC) {
+          countText.textContent = "(" + (count - 1) + " States + DC)";
+        } else {
+          countText.textContent = "(" + count + (count === 1 ? " State)" : " States)");
+        }
+      }
+
+      // Update List
+      var list = container.querySelector('.group-list');
+      if (list) {
+        list.innerHTML = '';
+        groupStates.forEach(function (state) {
+          var li = document.createElement('li');
+          var div = document.createElement('div');
+          div.className = 'group-state-text';
+          div.textContent = state.name;
+          li.appendChild(div);
+          list.appendChild(li);
+        });
       }
     }
   });
