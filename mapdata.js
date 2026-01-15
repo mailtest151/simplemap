@@ -826,7 +826,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var color = groupColors[group] || "#b2b2b2";
 
       simplemaps_usmap_mapdata.state_specific[code].color = color;
-      simplemaps_usmap_mapdata.state_specific[code].description = "Class " + group;
+      simplemaps_usmap_mapdata.state_specific[code].description = "";
       simplemaps_usmap_mapdata.state_specific[code].url = link;
       simplemaps_usmap_mapdata.state_specific[code].name = name;
 
