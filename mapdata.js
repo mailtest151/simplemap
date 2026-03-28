@@ -812,7 +812,7 @@ document.addEventListener("DOMContentLoaded", function () {
     '</svg>';
   document.body.appendChild(svgContainer);
 
-  var items = document.querySelectorAll('.w-dyn-item a');
+  var items = document.querySelectorAll('.state-dropdown .w-dyn-item a');
   var incompleteStates = [];
   var groups = {};
 
